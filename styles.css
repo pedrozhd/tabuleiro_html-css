@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.chess-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.board-wrapper {
+    display: flex;
+}
+
+.chess-board {
+    border: 15px solid #38312c;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid #000;
+}
+
+td {
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 40px;
+}
+
+.white {
+    background-color: #467024;
+}
+
+.black {
+    background-color: #e6d2c5;
+}
+
+.vertical-coordinates {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50px;
+    padding: 20px 10px;
+    background-color: #6a7c5b;
+    color: white;
+    font-weight: bold;
+    height: 480px;
+}
+
+.bottom-coordinates {
+    width: 100%;
+    display: flex;
+    background-color: #6a7c5b;
+    padding: 30px 30px;
+}
+
+.horizontal-letters {
+    display: flex;
+    justify-content: space-around;
+    width: 480px;
+    color: white;
+    font-weight: bold;
+    text-align: 100%;
+}
+
+.letter, .number {
+    width: 60px;
+    text-align: center;
+}
