@@ -1,10 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+    background-color:whitesmoke;
     font-family: Arial, sans-serif;
 }
 
@@ -12,68 +17,73 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .board-wrapper {
     display: flex;
+    align-items: center;
+    gap: 0;
 }
 
 .chess-board {
-    border: 15px solid #38312c;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    border: 2px solid #333;
 }
 
-table {
+.chess-board table {
     border-collapse: collapse;
-    border: 2px solid #000;
 }
 
-td {
-    width: 60px;
-    height: 60px;
+.chess-board td {
+    width: 50px;
+    height: 50px;
     text-align: center;
     vertical-align: middle;
-    font-size: 40px;
+    font-size: 30px;
+    cursor: pointer;
 }
 
-.white {
-    background-color: #467024;
+.chess-board .black {
+    background-color: #769656;
+    color: #000;
 }
 
-.black {
-    background-color: #e6d2c5;
+.chess-board .white {
+    background-color: #eeeed2;
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.chess-board td:hover {
+    opacity: 0.8;
+}
+
+.horizontal-letters {
+    display: flex;
+    width: 400px; 
+    margin-left: 40px; 
+}
+
+.horizontal-letters .letter {
+    width: 50px; 
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
 }
 
 .vertical-coordinates {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
-    width: 50px;
-    padding: 20px 10px;
-    background-color: #6a7c5b;
-    color: white;
+    height: 400px;
+    width: 40px; 
+    font-size: 18px;
     font-weight: bold;
-    height: 480px;
-}
-
-.bottom-coordinates {
-    width: 100%;
-    display: flex;
-    background-color: #6a7c5b;
-    padding: 30px 30px;
-}
-
-.horizontal-letters {
-    display: flex;
-    justify-content: space-around;
-    width: 480px;
-    color: white;
-    font-weight: bold;
-    text-align: 100%;
-}
-
-.letter, .number {
-    width: 60px;
-    text-align: center;
+    color: #333;
 }
